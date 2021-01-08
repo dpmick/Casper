@@ -1,0 +1,6 @@
+<launch>
+   <node pkg="casper" type="casper_controller.py" name="casper_controller" launch-prefix="sudo -E PYTHONPATH=$(env PYTHONPATH)"/>
+   <node pkg="casper" type="current_sensor.py" name="current_sensor" launch-prefix="sudo -E PYTHONPATH=$(env PYTHONPATH)"/>
+   <node pkg="casper" type="motor_control_2.py" name="motor_control_2" launch-prefix="sudo -E PYTHONPATH=$(env PYTHONPATH)"/>
+   <node pkg="casper" type="encoder.py" name="encoder" launch-prefix="sudo -E PYTHONPATH=$(env PYTHONPATH)"/>
+</launch>
